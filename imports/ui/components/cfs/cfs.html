@@ -1,0 +1,34 @@
+<template name="cfs">
+	<div class="col-md-4">
+	 	<div class="btn-group col-md-12" role="group" aria-label="...">
+  			<button type="button" id="I-II" class="btn btn-default col-md-3">I-II</button>
+  			<button type="button" id="III" class="btn btn-default col-md-3">III</button>
+  			<button type="button" id="IV" class="btn btn-default col-md-3">IV</button>
+  			<button type="button" id="V" class="btn btn-default col-md-3">V</button>
+  	</div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th class="arrow col-md-1">Class</th>
+            <th class="riverName col-md-5">River Name</th>
+            <th class="cfs col-md-3">CFS</th>
+            <th class="feet col-md-3"> Feet</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each usgs}}
+            <tr>
+              <td class="arrow col-md-1">{{class}}</td>
+              <td class="riverName col-md-5">{{river_name}}</td>
+              <td class="cfs col-md-3">{{cfs (river_name)}}</td>
+              <td class="feet col-md-3">{{feet (river_name)}}</td>
+            </tr>
+          {{/each}}
+        </tbody>
+      </table>
+  	<div></div>
+		<!--<div class="col-md-6">
+			 {{cfs "Concord"}}
+		</div>-->
+	</div>
+</template>

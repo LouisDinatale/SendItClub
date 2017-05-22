@@ -2,4 +2,4 @@
 
 import { Mongo } from 'meteor/mongo';
 
-export const UsgsData = new Mongo.Collection('usgs');
+export const Usgs = new Mongo.Collection('usgs');
