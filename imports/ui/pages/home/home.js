@@ -1,5 +1,6 @@
 import './home.html';
 import '../../components/cfs/cfs.js';
-import '../../components/hello/hello.js';
-import '../../components/info/info.js';
+import '../../components/content/content.js';
 import '../../components/nav/nav.js';
+import '../../components/weather/weather.js';
+

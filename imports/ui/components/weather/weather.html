@@ -1,0 +1,11 @@
+<template name="weather">
+	<div class="container">
+		{{#each allWeather}}
+				<div class="col-sm-1">
+	  				<div>{{temp @index}}</div>
+					<div>{{min @index}}</div>
+	  				<div>{{max @index}}</div>
+				</div>
+		{{/each}}
+  	</div>
+</template>

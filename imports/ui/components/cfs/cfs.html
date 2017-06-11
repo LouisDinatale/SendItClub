@@ -17,7 +17,7 @@
         </thead>
         <tbody>
           {{#each usgs}}
-            <tr>
+            <tr class="riverInfo" id="{{river_name}}">
               <td class="arrow col-md-1">{{class}}</td>
               <td class="riverName col-md-5">{{river_name}}</td>
               <td class="cfs col-md-3">{{cfs (river_name)}}</td>
@@ -27,8 +27,5 @@
         </tbody>
       </table>
   	<div></div>
-		<!--<div class="col-md-6">
-			 {{cfs "Concord"}}
-		</div>-->
 	</div>
 </template>
