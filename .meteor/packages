@@ -29,3 +29,5 @@ twbs:bootstrap
 dynamic-import@0.1.0
 accounts-facebook
 service-configuration
+facebook-config-ui
+ian:accounts-ui-bootstrap-3

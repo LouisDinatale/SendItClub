@@ -25,7 +25,7 @@ Template.cfs.helpers({
   	var val = siteObject.river_name + " -feet";
      Session.set(val, siteObject.currentFeet);
     return Session.get(val);
-    } 
+    }, 
 });
 
 Template.cfs.events({
@@ -42,11 +42,13 @@ Template.cfs.events({
         }
         Session.set("Query", queryPlaceHolder);
         Session.set("SelectedRiver", "Default");
+        $("#cfsTable").addClass('invisible');
     } else if($("#" + event.currentTarget.id).not(".active")){
     	$("#" + event.currentTarget.id).addClass("active");
         queryPlaceHolder = Session.get("Query");
         queryPlaceHolder.push({class: event.currentTarget.id});
         Session.set("Query", queryPlaceHolder);
+      $("#cfsTable").removeClass('invisible');
     }
   },
   'click .riverInfo': function(e) {

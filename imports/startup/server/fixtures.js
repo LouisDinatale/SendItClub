@@ -8,7 +8,7 @@ const allRivers = Usgs.find({});
 
 Meteor.startup(() => {
 	allRivers.forEach((river) => {
-		//usgsCall(river.river_name);
+		usgsCall(river.river_name);
 		//weatherCall(river.river_name);
 	});
 });

@@ -13,9 +13,19 @@ Template.content.helpers({
 			var head = Usgs.findOne({river_name: Session.get("SelectedRiver")});
 			return head.river_name;
 		}else{
-			return "Default";
+			return "Picture Gallery";
+		}
+	},
+	filler(){
+		if(Session.get("SelectedRiver") != "Default"){
+			return "weather";
+		}
+		if(Session.get("SelectedRiver") == "Default"){
+
+			return "pictureGallery";
 		}
 	}
+
 });
 
 Template.content.events({

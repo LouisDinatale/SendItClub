@@ -1,5 +1,5 @@
 body {
-	padding-top: 30px; 
+	background-color: #292929;
 }
 .arrow{
 	text-align: center;
@@ -14,8 +14,29 @@ body {
 	text-align: center;
 }
 .highlight{
-	background-color: #D3D3D3;
+	background-color: grey;
 }
-#content{
+.cfsTable{
+	background-color: white;
+	border-radius: 2px;
+}
+.login{
+	padding-right: 50px;
+	color: red;
+}
+.navbar {
+   	border-radius: 0px;
+    border-bottom-left-radius: .25em;
+    border-bottom-right-radius: .25em;
+}
+#hidden{
 	
 }
+
+/*
+292929
+5B7876
+8F9E8B
+F2E6B6
+412A22
+*/

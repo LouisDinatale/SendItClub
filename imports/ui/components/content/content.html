@@ -1,11 +1,11 @@
 <template name="content">
-	<div class="col-md-8" id="content">
+	<div class="col-md-8">
 		<div class="panel panel-primary">
-  		<div class="panel-heading">{{header}}</div>
-  		<div class="panel-body"> 
-			{{> weather}}
-  		</div>
-  		<div class="panel-footer">Powered by Dark Sky</div>
+	  		<div class="panel-heading">{{header}}</div>
+	  		<div class="panel-body"> 
+				{{> Template.dynamic template=filler}}
+	  		</div>
+	  		<div class="panel-footer">Powered by Dark Sky</div>
 		</div>
 	</div>
 </template>
